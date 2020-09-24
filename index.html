@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      canvas {
+        /* border: 1px solid #fff; */
+        height: 50vh;
+      }
+      .score {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 2.5rem;
+      }
+      span {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="score">
+        <span>Score:</span>
+        <div id="score"></div>
+      </div>
+      <canvas id="tetris" width="240" height="400"></canvas>
+    </div>
+    <script src="js/tetris.js"></script>
+  </body>
+</html>
